@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="title desc">
+  <title id="title">Zero waste and circular economy illustration</title>
+  <desc id="desc">Recycling arrows wrap around a semiconductor wafer.</desc>
+  <rect width="720" height="440" fill="#F3FBF7"/>
+  <circle cx="360" cy="210" r="126" fill="#E5EEF7" stroke="#0068B5" stroke-width="8"/>
+  <g stroke="#0068B5" stroke-width="4" opacity="0.45">
+    <path d="M254 170h212M254 210h212M254 250h212M320 104v212M360 88v244M400 104v212"/>
+  </g>
+  <g fill="none" stroke="#7CCF83" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M242 138c42-47 112-66 178-43"/>
+    <path d="M483 147c48 44 63 112 37 175"/>
+    <path d="M450 348c-65 33-143 21-195-31"/>
+  </g>
+  <g fill="#7CCF83">
+    <path d="M432 87l-12 61 59-19z"/>
+    <path d="M524 335l-41-47-20 58z"/>
+    <path d="M237 300l62 2-30 53z"/>
+  </g>
+  <rect x="84" y="316" width="160" height="70" rx="16" fill="#003C71"/>
+  <text x="164" y="361" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="white">Reuse</text>
+  <rect x="476" y="54" width="160" height="70" rx="16" fill="#003C71"/>
+  <text x="556" y="99" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="white">Recover</text>
+  <text x="360" y="410" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#003C71">Zero waste to landfill</text>
+</svg>

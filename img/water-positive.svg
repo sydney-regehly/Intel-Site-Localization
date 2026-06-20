@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="title desc">
+  <title id="title">Renewable electricity illustration</title>
+  <desc id="desc">Solar panels, wind turbines, and a processor chip.</desc>
+  <rect width="720" height="440" fill="#EAF9FC"/>
+  <circle cx="585" cy="92" r="55" fill="#F9D65C"/>
+  <path d="M0 310c130-58 250-62 368-15 115 46 228 42 352-22v167H0z" fill="#7CCF83" opacity="0.9"/>
+  <g fill="#0068B5">
+    <path d="M116 250h188l-34 102H72z" opacity="0.9"/>
+    <path d="M337 237h168l-22 80H310z" opacity="0.9"/>
+  </g>
+  <g stroke="#EAF9FC" stroke-width="4">
+    <path d="M91 285h195M105 320h164M145 252l-28 100M194 252l-16 100M244 252l-8 100"/>
+    <path d="M324 266h169M363 238l-28 79M416 238l-15 79M465 238l-5 79"/>
+  </g>
+  <g stroke="#003C71" stroke-width="8" stroke-linecap="round">
+    <path d="M185 226V127M147 126l38 22 38-22M185 148l-43 31M185 148l46 30"/>
+    <path d="M470 210V112M434 112l36 20 36-20M470 132l-40 29M470 132l42 28"/>
+  </g>
+  <rect x="285" y="130" width="150" height="115" rx="18" fill="#003C71"/>
+  <rect x="315" y="158" width="90" height="59" rx="8" fill="#00AEEF"/>
+  <g stroke="#003C71" stroke-width="8" stroke-linecap="round">
+    <path d="M285 158h-28M285 188h-28M285 218h-28M435 158h28M435 188h28M435 218h28"/>
+  </g>
+  <text x="360" y="405" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#003C71">100% renewable electricity</text>
+</svg>

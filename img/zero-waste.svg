@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="title desc">
+  <title id="title">Net positive water illustration</title>
+  <desc id="desc">Water drops, waves, and circuit connections.</desc>
+  <rect width="720" height="440" fill="#DFF7FC"/>
+  <path d="M0 297c95-32 151 34 240 0s146-35 240 0 151 34 240 0v143H0z" fill="#00AEEF" opacity="0.82"/>
+  <path d="M0 335c95-32 151 34 240 0s146-35 240 0 151 34 240 0v105H0z" fill="#0068B5" opacity="0.95"/>
+  <path d="M360 52c-61 75-99 130-99 188 0 60 45 105 99 105s99-45 99-105c0-58-38-113-99-188z" fill="white"/>
+  <path d="M360 105c-41 53-63 92-63 132 0 39 28 68 63 68s63-29 63-68c0-40-22-79-63-132z" fill="#00AEEF"/>
+  <g stroke="#003C71" stroke-width="7" stroke-linecap="round" opacity="0.75">
+    <path d="M165 120h90v80h58M555 132h-82v80h-49M160 230h74M562 246h-82"/>
+    <circle cx="165" cy="120" r="13" fill="#7CCF83" stroke="none"/>
+    <circle cx="555" cy="132" r="13" fill="#7CCF83" stroke="none"/>
+    <circle cx="160" cy="230" r="13" fill="#7CCF83" stroke="none"/>
+    <circle cx="562" cy="246" r="13" fill="#7CCF83" stroke="none"/>
+  </g>
+  <text x="360" y="404" text-anchor="middle" font-family="Arial" font-size="36" font-weight="700" fill="white">Net positive water</text>
+</svg>

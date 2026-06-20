@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="title desc">
+  <title id="title">Energy-efficient processor illustration</title>
+  <desc id="desc">A processor chip with leaves and an energy symbol.</desc>
+  <rect width="720" height="440" fill="#EFF8FF"/>
+  <rect x="224" y="94" width="272" height="240" rx="34" fill="#003C71"/>
+  <rect x="274" y="144" width="172" height="140" rx="18" fill="#00AEEF"/>
+  <g stroke="#003C71" stroke-width="10" stroke-linecap="round">
+    <path d="M224 136h-50M224 184h-50M224 232h-50M224 280h-50M496 136h50M496 184h50M496 232h50M496 280h50"/>
+    <path d="M270 94V44M318 94V44M366 94V44M414 94V44M270 334v50M318 334v50M366 334v50M414 334v50"/>
+  </g>
+  <path d="M360 162l-43 79h46l-22 75 66-98h-47z" fill="#F9D65C"/>
+  <path d="M486 86c62-22 100 9 109 61-53 9-93-7-109-61zM198 341c-57-10-84 23-86 73 47 1 78-22 86-73z" fill="#7CCF83"/>
+  <circle cx="590" cy="300" r="48" fill="#7CCF83" opacity="0.25"/>
+  <text x="360" y="414" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#003C71">More efficient products</text>
+</svg>

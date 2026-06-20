@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="title desc">
+  <title id="title">RISE 2030 technology and sustainability illustration</title>
+  <desc id="desc">A globe, leaves, and circuit lines symbolizing sustainable technology.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#003C71"/>
+      <stop offset="1" stop-color="#00AEEF"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="440" fill="url(#bg)"/>
+  <circle cx="360" cy="210" r="132" fill="#EAF9FC" opacity="0.95"/>
+  <path d="M242 210h236M360 78c-48 38-73 82-73 132s25 94 73 132M360 78c48 38 73 82 73 132s-25 94-73 132M231 164h258M231 256h258" fill="none" stroke="#0068B5" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+  <path d="M175 112h85M460 328h95M540 176h70M105 300h95" stroke="#BFF3FF" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="175" cy="112" r="15" fill="#7CCF83"/><circle cx="540" cy="176" r="15" fill="#7CCF83"/><circle cx="460" cy="328" r="15" fill="#7CCF83"/><circle cx="200" cy="300" r="15" fill="#7CCF83"/>
+  <path d="M510 102c54-21 89 3 97 47-45 10-83-2-97-47zM150 236c-50-16-80 8-89 47 42 10 76-3 89-47z" fill="#7CCF83"/>
+  <text x="360" y="408" text-anchor="middle" font-family="Arial" font-size="42" font-weight="700" fill="white">RISE 2030</text>
+</svg>

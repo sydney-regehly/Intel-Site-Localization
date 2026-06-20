@@ -1,0 +1,372 @@
+/*
+  Intel Sustainability Timeline Project
+*/
+
+:root {
+  --intel-blue: #0068b5;
+  --intel-blue-dark: #003c71;
+  --aqua: #6de0f6;
+  --ink: #172033;
+  --muted: #5b667a;
+  --card: #ffffff;
+  --soft-bg: #eef8fc;
+  --line: rgba(0, 104, 181, 0.25);
+  --shadow: 0 20px 45px rgba(0, 60, 113, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(0, 174, 239, 0.16), transparent 30rem),
+    linear-gradient(180deg, #ffffff 0%, var(--soft-bg) 100%);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.hero {
+  min-height: 80vh;
+  padding: 1.25rem clamp(1rem, 4vw, 4rem) 3rem;
+  color: white;
+  background:
+    linear-gradient(135deg, rgba(0, 60, 113, 0.95), rgba(0, 104, 181, 0.88)),
+    radial-gradient(circle at 85% 20%, rgba(109, 224, 246, 0.5), transparent 17rem),
+    radial-gradient(circle at 15% 75%, rgba(124, 207, 131, 0.34), transparent 16rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -8rem -12rem auto;
+  width: 32rem;
+  height: 32rem;
+  border: 1.5rem solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+}
+
+.topbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 0;
+}
+
+.intel-logo {
+  width: 7rem;
+  height: auto;
+}
+
+.nav-pill {
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  font-weight: 700;
+  transition: background-color 200ms ease, transform 200ms ease;
+}
+
+.nav-pill:hover,
+.nav-pill:focus {
+  background-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-2px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(880px, 100%);
+  padding-top: clamp(2.5rem, 8vw, 1rem);
+}
+
+.eyebrow {
+  margin: 0 0 0.65rem;
+  color: var(--aqua);
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.hero h1,
+.section-heading h2 {
+  margin: 0;
+  line-height: 1.05;
+}
+
+.hero h1 {
+  font-size: clamp(2.8rem, 8vw, 6.8rem);
+  max-width: 16ch;
+}
+
+.hero-copy {
+  max-width: 700px;
+  margin: 1.5rem 0 2rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 850px;
+}
+
+.hero-stats div {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 1.25rem;
+  padding: 1rem;
+  backdrop-filter: blur(14px);
+}
+
+.hero-stats strong {
+  display: block;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.hero-stats span {
+  display: block;
+  margin-top: 0.5rem;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.93rem;
+}
+
+main {
+  padding: 0 clamp(1rem, 4vw, 4rem) 4rem;
+}
+
+.timeline-section {
+  width: min(1220px, 100%);
+  margin: 0 auto;
+  padding: 5rem 0 3rem;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: rem;
+}
+
+.section-heading h2,
+.levelup-panel h2 {
+  color: var(--intel-blue-dark);
+  font-size: clamp(2rem, 4vw, 3.3rem);
+}
+
+.section-heading p:not(.eyebrow) {
+  color: var(--muted);
+  margin: 1rem 0 0;
+}
+
+.timeline {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  padding: 1rem 0 2rem;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 1rem;
+  position: relative;
+}
+
+.timeline::-webkit-scrollbar {
+  height: 10px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background: rgba(0, 104, 181, 0.35);
+  border-radius: 999px;
+}
+
+.timeline::-webkit-scrollbar-track {
+  background: rgba(0, 104, 181, 0.08);
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 3.2rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  height: 3px;
+  background: var(--line);
+  z-index: 0;
+}
+
+.milestone-card {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 340px;
+  scroll-snap-align: start;
+  background: var(--card);
+  border: 1px solid rgba(0, 104, 181, 0.16);
+  border-radius: 1.35rem;
+  box-shadow: 0 10px 24px rgba(0, 60, 113, 0.09);
+  overflow: hidden;
+  outline: none;
+  transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
+}
+
+.milestone-card:hover,
+.milestone-card:focus-within {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: var(--shadow);
+  border-color: rgba(0, 174, 239, 0.6);
+}
+
+.year {
+  position: absolute;
+  top: 0.9rem;
+  left: 0.9rem;
+  z-index: 2;
+  background: var(--intel-blue);
+  color: white;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  font-weight: 800;
+  box-shadow: 0 6px 15px rgba(0, 60, 113, 0.22);
+}
+
+.milestone-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  background: #dff5fb;
+  cursor: pointer;
+}
+
+.milestone-card img:focus {
+  outline: 3px solid var(--aqua);
+  outline-offset: -3px;
+}
+
+.card-content {
+  padding: 1.25rem;
+}
+
+.card-content h3 {
+  margin: 0;
+  color: var(--intel-blue-dark);
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.summary {
+  color: var(--muted);
+  margin: 0.75rem 0 0;
+}
+
+.details {
+  display: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.details p {
+  margin: 0;
+  padding-top: 0.9rem;
+  color: #334155;
+}
+
+.milestone-card > img:hover + .card-content .details,
+.milestone-card > img:focus + .card-content .details {
+  display: block;
+}
+
+footer {
+  padding: 2rem clamp(1rem, 4vw, 4rem);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  color: var(--muted);
+}
+
+.footer-right {
+  margin: 0 0 0 auto;
+}
+
+@media (max-width: 760px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero {
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .topbar {
+    align-items: flex-start;
+  }
+
+  .intel-logo {
+    width: 5.8rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1rem 0 2rem;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  .milestone-card {
+    width: 100%;
+  }
+
+  .milestone-card:hover,
+  .milestone-card:focus-within {
+    transform: translateY(-4px);
+  }
+
+  .milestone-card img {
+    height: 190px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.1ms !important;
+    scroll-behavior: auto !important;
+  }
+}
